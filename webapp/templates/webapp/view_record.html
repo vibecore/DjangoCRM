@@ -1,0 +1,26 @@
+{% extends 'webapp/base.html' %} 
+{% block content %}
+<div class="container bg-light shadow-md m-5 form-layout">
+    <br>
+    <h3>View Record</h3>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <p><strong>ID:</strong> {{record.id}}</p>
+            <p><strong>First Name:</strong> {{record.firstname}}</p>
+            <p><strong>Last Name:</strong> {{record.lastname}}</p>
+            <p><strong>Email:</strong> {{record.email}}</p>
+            <p><strong>Phone:</strong> {{record.phone}}</p>
+            <p><strong>Address:</strong> {{record.address}}</p>
+            <p><strong>City:</strong> {{record.city}}</p>
+            <p><strong>State:</strong> {{record.state}}</p>
+            <p><strong>Country:</strong> {{record.country}}</p>
+        </div>
+    </div>
+    <br>
+    <a href="{% url 'dashboard' %}" class="btn btn-outline-primary btn-sm">Back to dashboard</a>
+    <a href="{% url 'update_record' record.id %}" class="btn btn-outline-primary btn-sm">Edit</a>
+    <a href="{% url 'delete_record' record.id %}" class="btn btn-outline-danger btn-sm">Delete</a>
+    <br />
+</div>
+{% endblock content %}

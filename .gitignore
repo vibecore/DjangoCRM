@@ -1,0 +1,39 @@
+# .gitignore
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore database files
+*.sqlite3
+*.db
+
+# Ignore development and environment-specific files
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+__pycache__/
+db.sqlite3
+.env
+env/
+venv/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
